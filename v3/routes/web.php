@@ -21,7 +21,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/game', 'GameController@index')->name('game');
 Route::get('/game', 'UserController@userdata');
 Route::get('/admin', 'UserController@index')->name('admin');
